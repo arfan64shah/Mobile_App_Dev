@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Site</title>
+</head>
+<body manifest = "example.appcache">
+    <div style="text-align: center; padding-top: 10px">
+        <img id="image" style="width: 50%; height: 300px;" src="1.jpg"><br><br>
+
+        <button onclick=waterfall() style="width: 130px; height: 30px; background-color:deepskyblue; border: 2px solid deepskyblue; border-radius: 5px; font-weight: bold">Lets Show Water</button>
+        <button onclick=fire() style="width: 130px; height: 30px; background-color:   red; border: 2px solid red; border-radius: 5px; font-weight: bold">Lets Show Fire</button>
+    </div>
+    
+    <script>
+        function waterfall(){
+            document.getElementById('image').src="1.jpg";
+        }
+        function fire() {
+            document.getElementById('image').src="fire.avif";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="en" class="yui3-js-enabled" lang="en"><head>
+    <title>Build a Simple User Interface: Quiz: Attempt review</title>
+    <link rel="shortcut icon" href="https://ucasaslms.org/pluginfile.php/1/theme_moove/favicon/1662461089/UCA-Rhombus-Blue-frame%281%29.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, Build a Simple User Interface: Quiz: Attempt review">
+<link rel="stylesheet" type="text/css" href="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/combo.css"><script charset="utf-8" id="yui_3_17_2_1_1664126464023_8" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/combo_003" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1664126464023_19" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript_004.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1664126464023_250" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript_005.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1664126464023_251" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript_002.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1664126464023_252" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/combo_002" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/styles.css">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/ucasaslms.org","sesskey":"FAvAjzMpJH","sessiontimeout":"28800","themerev":"1662461089","slasharguments":1,"theme":"moove","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1662461089","admin":"admin","svgicons":true,"usertimezone":"Asia\/Bishkek","contextid":37358,"langrev":1663923188,"templaterev":"1662461089"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/ucasaslms.org\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/ucasaslms.org\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/ucasaslms.org\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/ucasaslms.org\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/ucasaslms.org\/theme\/yui_combo.php?m\/1662461089\/","combine":true,"comboBase":"https:\/\/ucasaslms.org\/theme\/yui_combo.php?","ext":false,"root":"m\/1662461089\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_sectioncompleted-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-report_overviewstats-charts":{"requires":["base","node","charts","charts-legend"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/ucasaslms.org\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/ucasaslms.org\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1662461089\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/ucasaslms.org\/lib\/javascript.php\/1662461089\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/ucasaslms.org\/lib\/javascript.php\/1662461089\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/ucasaslms.org\/lib\/javascript.php\/1662461089\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/ucasaslms.org\/lib\/javascript.php\/1662461089\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/ucasaslms.org\/lib\/javascript.php\/1662461089\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<script>
+                                    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
+                                    ga.l=+new Date;ga('create', 'UA-200406003-1', 'auto');
+                                    ga('send', 'pageview');
+                                </script>
+                                <script async="" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/analytics.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <link href="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/css.css" rel="stylesheet">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/requirejs.php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript_003.php"></script></head>
+
+<body id="page-mod-quiz-review" class="format-topics  path-mod path-mod-quiz gecko dir-ltr lang-en yui-skin-sam yui3-skin-sam ucasaslms-org pagelayout-incourse course-779 context-37358 cmid-27257 category-62  jsenabled">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript.php"></script>
+<script src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript_007.php"></script>
+<script src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/combo"></script><script src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript_006.php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    
+<div id="accessibilitybar" class="fixed-top">
+    <div class="container">
+        <div class="bars">
+            <div class="fontsize">
+                <span>Font size</span>
+                <ul>
+                    <li><a class="btn btn-default" data-action="decrease" title="Decrease font size" id="fontsize_dec">A-</a></li>
+                    <li><a class="btn btn-default" data-action="reset" title="Reset font size" id="fontsize_reset">A</a></li>
+                    <li><a class="btn btn-default" data-action="increase" title="Increase font size" id="fontsize_inc">A+</a></li>
+                </ul>
+            </div>
+            <div class="sitecolor">
+                <span>Site color</span>
+                <ul>
+                    <li><a class="btn btn-default" data-action="reset" title="Reset site color" id="sitecolor_color1">R</a></li>
+                    <li><a class="btn btn-default" data-action="sitecolor-color-2" title="Low contrast 1" id="sitecolor_color2">A</a></li>
+                    <li><a class="btn btn-default" data-action="sitecolor-color-3" title="Low contrast 2" id="sitecolor_color3">A</a></li>
+                    <li><a class="btn btn-default" data-action="sitecolor-color-4" title="High contrast" id="sitecolor_color4">A</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>    
+    <nav class="fixed-top navbar navbar-light navbar-expand moodle-has-zindex">
+            <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="slicon-menu"></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+        <a href="https://ucasaslms.org/" class="navbar-brand has-logo
+                ">
+                <span class="logo d-none d-sm-inline">
+                    <img src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/UCA-Logo-TextRightOneLine(1)%20-%20Copy.png" alt="UCASAS">
+                </span>
+        </a>
+    
+        <ul class="navbar-nav d-none d-md-flex custom-menus">
+            <!-- custom_menu -->
+            <li class="nav-item"><a class="nav-link" href="https://sites.google.com/view/ucaonlinelearning/home">DDL Resources -</a></li><li class="nav-item"><a class="nav-link" href="https://intranet.ucentralasia.org/login?no_autologin=1&amp;page=%2Fforms%2Fucahelpdesk">IT Help Desk -</a></li><li class="nav-item"><a class="nav-link" href="https://ucasaslms.org/course/view.php?id=106">Opportunities for Graduate Studies -</a></li><li class="nav-item"><a class="nav-link" href="https://kurak.ucentralasia.org:8060/fiori/shells/abap/Fiorilaunchpad.html?saml2=disabled">My Fiori App</a></li>
+            <!-- page_heading_menu -->
+            
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <div class="d-none d-lg-block">
+                
+            </div>
+    
+            <li class="nav-item lang-menu">
+                <div class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-63308dfe9a3fc63308dfe8d6bb6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        <i class="slicon-globe"></i>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-63308dfe9a3fc63308dfe8d6bb6">
+                <a class="dropdown-item" href="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                <a class="dropdown-item" href="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257&amp;lang=ky" title="Кыргызча ‎(ky)‎">Кыргызча ‎(ky)‎</a>
+                <a class="dropdown-item" href="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257&amp;lang=kk" title="Қазақша ‎(kk)‎">Қазақша ‎(kk)‎</a>
+                <a class="dropdown-item" href="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257&amp;lang=ru" title="Русский ‎(ru)‎">Русский ‎(ru)‎</a>
+                <a class="dropdown-item" href="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257&amp;lang=tg" title="Тоҷикӣ ‎(tg)‎">Тоҷикӣ ‎(tg)‎</a>
+                <a class="dropdown-item" href="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257&amp;lang=ur" title="اردو ‎(ur)‎">اردو ‎(ur)‎</a>
+    </div>
+</div>
+            </li>
+    
+            <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="184" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-63308dfe9aa0f63308dfe8d6bb7" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <i class="slicon-bell" title="Toggle notifications menu"></i>
+        <div class="count-container " data-region="count-container">3</div>
+
+    </div>
+    <div id="popover-region-container-63308dfe9aa0f63308dfe8d6bb7" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button" href="#" title="Mark all as read" data-action="mark-all-read" role="button">
+                    <span class="normal-icon"><i class="slicon-check" alt="Mark all as read"></i></span>
+                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Mark all as read
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://ucasaslms.org/message/notificationpreferences.php?userid=184" title="Notification preferences">
+                    <i class="slicon-settings" alt="Notification preferences"></i>
+                </a>
+
+    <div class="hover-tooltip">
+        Notification preferences
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link" href="https://ucasaslms.org/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed" data-region="popover-region-messages">
+    <a id="message-drawer-toggle-63308dfea030a63308dfe8d6bb8" class="nav-link d-inline-block popover-region-toggle position-relative" href="#" role="button">
+        <i class="icon fa slicon-bubble fa-fw " title="Toggle messaging drawer" aria-label="Toggle messaging drawer"></i>
+        <div class="count-container " data-region="count-container" aria-label="There are 2 unread conversations">2</div>
+    </a>
+    <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span></div>
+    
+            <li class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-1" aria-label="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            
+                            <span class="userbutton"><span class="usertext"></span><span class="avatars"><span class="avatar current"><img src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/f2.png" class="userpicture defaultuserpic" aria-hidden="true" width="35" height="35"></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+                                        <a href="https://ucasaslms.org/user/profile.php?id=184" class="dropdown-item text-username menu-action" role="menuitem" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa slicon-user fa-fw " title="Arfan Shah" aria-label="Arfan Shah"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Arfan Shah
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://ucasaslms.org/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa slicon-speedometer fa-fw " title="Dashboard" aria-label="Dashboard"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <a href="https://ucasaslms.org/user/profile.php?id=184" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa slicon-user fa-fw " title="Profile" aria-label="Profile"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://ucasaslms.org/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa slicon-book-open fa-fw " title="Grades" aria-label="Grades"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Grades
+                                            </span>
+                                        </a>
+                                        <a href="https://ucasaslms.org/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa slicon-bubble fa-fw " title="Messages" aria-label="Messages"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Messages
+                                            </span>
+                                        </a>
+                                        <a href="https://ucasaslms.org/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa slicon-wrench fa-fw " title="Preferences" aria-label="Preferences"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://ucasaslms.org/login/logout.php?sesskey=FAvAjzMpJH" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-7">
+                                                <i class="icon fa slicon-logout fa-fw " title="Log out" aria-label="Log out"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-7">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></li>
+        </ul>
+    </nav>
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                        <div class="page-context-header"><div class="page-header-headings"><h1>COMP 3053 Mobile App Development</h1></div></div>
+                    </div>
+
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav>
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://ucasaslms.org/my/">Dashboard</a></li>
+                <li class="breadcrumb-item"><span class="no-link">My courses</span></li>
+                <li class="breadcrumb-item"><a href="https://ucasaslms.org/course/index.php?categoryid=2">The School of Arts and Sciences</a></li>
+                <li class="breadcrumb-item"><a href="https://ucasaslms.org/course/index.php?categoryid=7">Senior Year</a></li>
+                <li class="breadcrumb-item"><a href="https://ucasaslms.org/course/index.php?categoryid=62">Term 1 Fall FY (2022-23)</a></li>
+                <li class="breadcrumb-item"><a href="https://ucasaslms.org/course/view.php?id=779" title="COMP 3053 Mobile App Development">EMAD3053NC - 2023_1</a></li>
+                <li class="breadcrumb-item"><a href="https://ucasaslms.org/course/view.php?id=779#section-3">Week 3</a></li>
+                <li class="breadcrumb-item"><a href="https://ucasaslms.org/mod/quiz/view.php?id=27257" title="Quiz">Build a Simple User Interface: Quiz</a></li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-md-9 col-sm-12 col-xs-12">
+                <section id="region-main">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="notifications" id="user-notifications"></span>
+                            <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Sunday, 25 September 2022, 11:01 PM</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Sunday, 25 September 2022, 11:21 PM</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">19 mins 56 secs</td></tr><tr><th class="cell" scope="row">Grade</th><td class="cell"><b>25.00</b> out of 25.00 (<b>100</b>%)</td></tr></tbody></table><form action="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257" method="post" class="questionflagsaveform" autocomplete="off" id="yui_3_17_2_1_1664126464023_260"><div><div id="question-19677-2" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_25"><input type="hidden" name="q19677:2_:flagged" value="0"><input type="hidden" value="qaid=194626&amp;qubaid=19677&amp;qid=47495&amp;slot=2&amp;checksum=39bfce13ea2d26b03b869e4a3e3c1568&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:2_:flaggedcheckbox" name="q19677:2_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:2_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>Why don't we give min SDK as 1 in Android?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:2_answer" disabled="disabled" value="0" id="q19677:2_answer0"><label for="q19677:2_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Android doesn't allow min version 1<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:2_answer" disabled="disabled" value="1" id="q19677:2_answer1" checked="checked"><label for="q19677:2_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Android deprecated version<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q19677:2_answer" disabled="disabled" value="2" id="q19677:2_answer2"><label for="q19677:2_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">There is no value for 1<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:2_answer" disabled="disabled" value="3" id="q19677:2_answer3"><label for="q19677:2_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Google doesn't allow min version 1<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-22" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_34"><input type="hidden" name="q19677:22_:flagged" value="0"><input type="hidden" value="qaid=194646&amp;qubaid=19677&amp;qid=47515&amp;slot=22&amp;checksum=19a5924e8b878da10295e02b7c4772c2&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:22_:flaggedcheckbox" name="q19677:22_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:22_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the statement in Java?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:22_answer" disabled="disabled" value="0" id="q19677:22_answer0"><label for="q19677:22_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a small Java program that runs inside the browser and generates dynamic content<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:22_answer" disabled="disabled" value="1" id="q19677:22_answer1" checked="checked"><label for="q19677:22_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language feature that assigns a value to a variable, controls a 
+program’s flow by making a decision and/or repeatedly executing another 
+statement, or performs another task<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q19677:22_answer" disabled="disabled" value="2" id="q19677:22_answer2"><label for="q19677:22_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a combination of literals, variable names, method calls, and 
+operators. At runtime, it evaluates to a value whose type is referred to
+ as the expression’s type.<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:22_answer" disabled="disabled" value="3" id="q19677:22_answer3"><label for="q19677:22_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a process of executing multiple threads simultaneously<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-21" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_43"><input type="hidden" name="q19677:21_:flagged" value="0"><input type="hidden" value="qaid=194645&amp;qubaid=19677&amp;qid=47514&amp;slot=21&amp;checksum=61c2457ffe251630ca7567c35963c610&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:21_:flaggedcheckbox" name="q19677:21_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:21_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the Java operator?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:21_answer" disabled="disabled" value="0" id="q19677:21_answer0"><label for="q19677:21_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is the external file to store variables of the same type<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:21_answer" disabled="disabled" value="1" id="q19677:21_answer1"><label for="q19677:21_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language feature that identifies a set of values (and their 
+representation in memory) and a set of operations that transform these 
+values into other values of that set<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:21_answer" disabled="disabled" value="2" id="q19677:21_answer2"><label for="q19677:21_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a named memory location that stores some type of value<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:21_answer" disabled="disabled" value="3" id="q19677:21_answer3" checked="checked"><label for="q19677:21_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a sequence of instructions symbolically represented in source code<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+</div></div></div></div></div><div id="question-19677-7" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_52"><input type="hidden" name="q19677:7_:flagged" value="0"><input type="hidden" value="qaid=194631&amp;qubaid=19677&amp;qid=47500&amp;slot=7&amp;checksum=bec8c59185b91c7dcfc8efe1d7896537&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:7_:flaggedcheckbox" name="q19677:7_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:7_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the purpose of the Java compiler?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0 correct"><input type="radio" name="q19677:7_answer" disabled="disabled" value="0" id="q19677:7_answer0" checked="checked"><label for="q19677:7_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">To translate source code into instructions (and associated data) that are executed by the virtual machine<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:7_answer" disabled="disabled" value="1" id="q19677:7_answer1"><label for="q19677:7_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">To
+ convert from one type to another type. For example, we can use this 
+operator to convert from floating-point type to 32-bit integer type.<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:7_answer" disabled="disabled" value="2" id="q19677:7_answer2"><label for="q19677:7_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It refers to an operator’s level of importance<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:7_answer" disabled="disabled" value="3" id="q19677:7_answer3"><label for="q19677:7_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ provides a secure environment in which code executes. It accomplishes 
+this task in part by using a bytecode verifier to make sure that the 
+classfile’s bytecode is valid.<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-11" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_61"><input type="hidden" name="q19677:11_:flagged" value="0"><input type="hidden" value="qaid=194635&amp;qubaid=19677&amp;qid=47504&amp;slot=11&amp;checksum=ad9817d052f106396255c524346ac785&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:11_:flaggedcheckbox" name="q19677:11_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:11_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the default value of local variables?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:11_answer" disabled="disabled" value="0" id="q19677:11_answer0"><label for="q19677:11_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">0 for integers and 0.0000000001 for the floating-point numbers<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:11_answer" disabled="disabled" value="1" id="q19677:11_answer1"><label for="q19677:11_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Only variables of String type have a default value “ “<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:11_answer" disabled="disabled" value="2" id="q19677:11_answer2" checked="checked"><label for="q19677:11_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">They are not initialized to any default value, neither primitives nor object references<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:11_answer" disabled="disabled" value="3" id="q19677:11_answer3"><label for="q19677:11_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">They are initialized to any default value, either primitives or object references<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-17" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_70"><input type="hidden" name="q19677:17_:flagged" value="0"><input type="hidden" value="qaid=194641&amp;qubaid=19677&amp;qid=47510&amp;slot=17&amp;checksum=6adab60de1c50d1ad09f6bc4199f8d5c&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:17_:flaggedcheckbox" name="q19677:17_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:17_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is Java type?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:17_answer" disabled="disabled" value="0" id="q19677:17_answer0"><label for="q19677:17_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a named memory location that stores some type of value<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:17_answer" disabled="disabled" value="1" id="q19677:17_answer1"><label for="q19677:17_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a sequence of instructions symbolically represented in source code<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:17_answer" disabled="disabled" value="2" id="q19677:17_answer2"><label for="q19677:17_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is the external file to store variables of the same type<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:17_answer" disabled="disabled" value="3" id="q19677:17_answer3" checked="checked"><label for="q19677:17_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language feature that identifies a set of values (and their 
+representation in memory) and a set of operations that transform these 
+values into other values of that set<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+</div></div></div></div></div><div id="question-19677-19" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">7</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_79"><input type="hidden" name="q19677:19_:flagged" value="0"><input type="hidden" value="qaid=194643&amp;qubaid=19677&amp;qid=47512&amp;slot=19&amp;checksum=d55055635b2f3c51766b3b152443c617&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:19_:flaggedcheckbox" name="q19677:19_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:19_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is Java expression?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0 correct"><input type="radio" name="q19677:19_answer" disabled="disabled" value="0" id="q19677:19_answer0" checked="checked"><label for="q19677:19_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a combination of literals, variable names, method calls, and 
+operators. At runtime, it evaluates to a value whose type is referred to
+ as the expression’s type.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:19_answer" disabled="disabled" value="1" id="q19677:19_answer1"><label for="q19677:19_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a process of executing multiple threads simultaneously<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:19_answer" disabled="disabled" value="2" id="q19677:19_answer2"><label for="q19677:19_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language feature that assigns a value to a variable, controls a 
+program’s flow by making a decision and/or repeatedly executing another 
+statement, or performs another task<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:19_answer" disabled="disabled" value="3" id="q19677:19_answer3"><label for="q19677:19_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a small Java program that runs inside the browser and generates dynamic content<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-15" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">8</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_88"><input type="hidden" name="q19677:15_:flagged" value="0"><input type="hidden" value="qaid=194639&amp;qubaid=19677&amp;qid=47508&amp;slot=15&amp;checksum=c0dacd61c569f4e429bd210922a34b6f&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:15_:flaggedcheckbox" name="q19677:15_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:15_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the Java identifier?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0 correct"><input type="radio" name="q19677:15_answer" disabled="disabled" value="0" id="q19677:15_answer0" checked="checked"><label for="q19677:15_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language feature that consists of letters (A-Z, a-z, or equivalent
+ uppercase/lowercase letters in other human alphabets), digits (0-9 or 
+equivalent digits in other human alphabets), connecting punctuation 
+characters (such as the underscore), and currency symbols (such as the 
+dollar sign, $). This name must begin with a letter, a currency symbol, 
+or a connecting punctuation character; and its length cannot exceed the 
+line in which it appears.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:15_answer" disabled="disabled" value="1" id="q19677:15_answer1"><label for="q19677:15_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is the external file to store variables of the same type<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:15_answer" disabled="disabled" value="2" id="q19677:15_answer2"><label for="q19677:15_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a sequence of instructions symbolically represented in source code<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:15_answer" disabled="disabled" value="3" id="q19677:15_answer3"><label for="q19677:15_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a named memory location that stores some type of value<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-5" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">9</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_97"><input type="hidden" name="q19677:5_:flagged" value="0"><input type="hidden" value="qaid=194629&amp;qubaid=19677&amp;qid=47498&amp;slot=5&amp;checksum=56cf347f4277efc8b0faa82f7f7abcb3&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:5_:flaggedcheckbox" name="q19677:5_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:5_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What are the four essential states of an Android app’s activity?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:5_answer" disabled="disabled" value="0" id="q19677:5_answer0"><label for="q19677:5_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">HDD, SSD, ROM, and RAM<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:5_answer" disabled="disabled" value="1" id="q19677:5_answer1" checked="checked"><label for="q19677:5_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Active
+ – if the activity is at the foreground, Paused – if the activity is at 
+the background and still visible, Stopped – if the activity is not 
+visible and therefore is hidden or obscured by another activity, 
+Destroyed – when the activity process is killed or completed/terminated<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q19677:5_answer" disabled="disabled" value="2" id="q19677:5_answer2"><label for="q19677:5_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Start, Continue, Pause, Stop<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:5_answer" disabled="disabled" value="3" id="q19677:5_answer3"><label for="q19677:5_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Windows OS, Linux OS, Mac OS, and Chrome OS<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-9" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">10</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_106"><input type="hidden" name="q19677:9_:flagged" value="0"><input type="hidden" value="qaid=194633&amp;qubaid=19677&amp;qid=47502&amp;slot=9&amp;checksum=c532eeccf5ec38af40d3c5eeeeda19c1&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:9_:flaggedcheckbox" name="q19677:9_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:9_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>How does the Java platform promote security?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:9_answer" disabled="disabled" value="0" id="q19677:9_answer0"><label for="q19677:9_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">To translate source code into instructions (and associated data) that are executed by the virtual machine<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:9_answer" disabled="disabled" value="1" id="q19677:9_answer1"><label for="q19677:9_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">To
+ convert from one type to another type. For example, we can use this 
+operator to convert from floating-point type to 32-bit integer type.<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:9_answer" disabled="disabled" value="2" id="q19677:9_answer2" checked="checked"><label for="q19677:9_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ provides a secure environment in which code executes. It accomplishes 
+this task in part by using a bytecode verifier to make sure that the 
+classfile’s bytecode is valid.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:9_answer" disabled="disabled" value="3" id="q19677:9_answer3"><label for="q19677:9_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It refers to an operator’s level of importance<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-4" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">11</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_115"><input type="hidden" name="q19677:4_:flagged" value="0"><input type="hidden" value="qaid=194628&amp;qubaid=19677&amp;qid=47497&amp;slot=4&amp;checksum=b29a7a3a8bc42f87377ccc89259325de&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:4_:flaggedcheckbox" name="q19677:4_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:4_:sequencecheck" value="3"><div class="qtext"><strong>What is ADB?</strong></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:4_answer" disabled="disabled" value="0" id="q19677:4_answer0"><label for="q19677:4_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A mobile app user can access and share information anytime or anywhere. Internet connection is not required for most apps.<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:4_answer" disabled="disabled" value="1" id="q19677:4_answer1"><label for="q19677:4_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a discontinued process virtual machine in Google's Android operating system that executes applications written for Android<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:4_answer" disabled="disabled" value="2" id="q19677:4_answer2" checked="checked"><label for="q19677:4_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is short for Android Debug Bridge. It allows developers the power to 
+execute remote shell commands. Its basic function is to allow and 
+control communication towards and from the emulator port.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:4_answer" disabled="disabled" value="3" id="q19677:4_answer3"><label for="q19677:4_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The developer workflow of the Java Android app<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-10" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">12</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_124"><input type="hidden" name="q19677:10_:flagged" value="0"><input type="hidden" value="qaid=194634&amp;qubaid=19677&amp;qid=47503&amp;slot=10&amp;checksum=9950928f8a7609c85afd9581df0078c1&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:10_:flaggedcheckbox" name="q19677:10_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:10_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the JRE?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:10_answer" disabled="disabled" value="0" id="q19677:10_answer0"><label for="q19677:10_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language and a platform. The language is partly patterned after 
+the C and C++ languages to shorten the learning curve for C/C++ 
+developers. The platform consists of a virtual machine and an associated
+ execution environment.<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:10_answer" disabled="disabled" value="1" id="q19677:10_answer1" checked="checked"><label for="q19677:10_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It implements the Java SE platform and makes it possible to run Java programs<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q19677:10_answer" disabled="disabled" value="2" id="q19677:10_answer2"><label for="q19677:10_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is used to improve performance. It compiles parts of the byte code that
+ have similar functionality at the same time, and hence reduces the 
+amount of time needed for compilation. Here the term “compiler” refers 
+to a translator from the instruction set of a Java virtual machine (JVM)
+ to the instruction set of a specific CPU.<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:10_answer" disabled="disabled" value="3" id="q19677:10_answer3"><label for="q19677:10_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a software-based processor that presents its own instruction set<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-6" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">13</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_133"><input type="hidden" name="q19677:6_:flagged" value="0"><input type="hidden" value="qaid=194630&amp;qubaid=19677&amp;qid=47499&amp;slot=6&amp;checksum=60e97a7934faba50721c91ab57097d77&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:6_:flaggedcheckbox" name="q19677:6_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:6_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the AndroidManifest.xml?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:6_answer" disabled="disabled" value="0" id="q19677:6_answer0"><label for="q19677:6_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is an HTML file used by Java Android app<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:6_answer" disabled="disabled" value="1" id="q19677:6_answer1" checked="checked"><label for="q19677:6_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">This
+ file is essential in every application. It is declared in the root 
+directory and contains information about the application that the 
+Android system must know before the codes can be executed.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q19677:6_answer" disabled="disabled" value="2" id="q19677:6_answer2"><label for="q19677:6_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It as a manifest file in the offline web app that includes the info about files the web-browser has to download into the cache<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:6_answer" disabled="disabled" value="3" id="q19677:6_answer3"><label for="q19677:6_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a file with Java code presented by XML<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-23" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">14</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_142"><input type="hidden" name="q19677:23_:flagged" value="0"><input type="hidden" value="qaid=194647&amp;qubaid=19677&amp;qid=47516&amp;slot=23&amp;checksum=e5b2f7847718db5ce7714321b595790f&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:23_:flaggedcheckbox" name="q19677:23_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:23_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the difference between the while and do-while statements?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:23_answer" disabled="disabled" value="0" id="q19677:23_answer0"><label for="q19677:23_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The
+ first one evaluates its Boolean expression at the bottom of the loop, 
+whereas the second one evaluates its Boolean expression at the top of 
+the loop. As a result, the first loop executes zero or more times, 
+whereas the second loop executes one or more times.<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:23_answer" disabled="disabled" value="1" id="q19677:23_answer1"><label for="q19677:23_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The
+ first one evaluates its Boolean expression at the top of the loop, 
+whereas the second one evaluates its Boolean expression at the bottom of
+ the loop. As a result, the first loop executes one or more times, 
+whereas the second loop executes zero or more times.<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:23_answer" disabled="disabled" value="2" id="q19677:23_answer2"><label for="q19677:23_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The
+ first one evaluates its Boolean expression at the bottom of the loop, 
+whereas the second one evaluates its Boolean expression at the top of 
+the loop. As a result, the first loop executes one or more times, 
+whereas the second loop executes zero or more times.<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:23_answer" disabled="disabled" value="3" id="q19677:23_answer3" checked="checked"><label for="q19677:23_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The
+ first one evaluates its Boolean expression at the top of the loop, 
+whereas the second one evaluates its Boolean expression at the bottom of
+ the loop. As a result, the first loop executes zero or more times, 
+whereas the second loop executes one or more times.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+</div></div></div></div></div><div id="question-19677-12" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">15</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_151"><input type="hidden" name="q19677:12_:flagged" value="0"><input type="hidden" value="qaid=194636&amp;qubaid=19677&amp;qid=47505&amp;slot=12&amp;checksum=db4d260cb8195505f84e6582b4e45993&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:12_:flaggedcheckbox" name="q19677:12_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:12_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the IDE that Google uses to develop Android apps?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:12_answer" disabled="disabled" value="0" id="q19677:12_answer0"><label for="q19677:12_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The IDE that Google uses to develop Android apps is Visual Studio<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:12_answer" disabled="disabled" value="1" id="q19677:12_answer1"><label for="q19677:12_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The IDE that Google uses to develop Android apps is Arduino Studio<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:12_answer" disabled="disabled" value="2" id="q19677:12_answer2"><label for="q19677:12_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The IDE that Google uses to develop Android apps is Microsoft Office developer tools<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:12_answer" disabled="disabled" value="3" id="q19677:12_answer3" checked="checked"><label for="q19677:12_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">The IDE that Google uses to develop Android apps is Android Studio<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+</div></div></div></div></div><div id="question-19677-3" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">16</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_160"><input type="hidden" name="q19677:3_:flagged" value="0"><input type="hidden" value="qaid=194627&amp;qubaid=19677&amp;qid=47496&amp;slot=3&amp;checksum=6dbd5b4381cac8074e0a33aa41c3c0af&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:3_:flaggedcheckbox" name="q19677:3_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:3_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>Which of the following factors to consider in designing a Mobile Application?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0 correct"><input type="radio" name="q19677:3_answer" disabled="disabled" value="0" id="q19677:3_answer0" checked="checked"><label for="q19677:3_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">All answers are correct<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:3_answer" disabled="disabled" value="1" id="q19677:3_answer1"><label for="q19677:3_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Resource Management<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:3_answer" disabled="disabled" value="2" id="q19677:3_answer2"><label for="q19677:3_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Screen Size<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:3_answer" disabled="disabled" value="3" id="q19677:3_answer3"><label for="q19677:3_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">User Interaction<br></p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:3_answer" disabled="disabled" value="4" id="q19677:3_answer4"><label for="q19677:3_answer4" class="d-flex w-100"><span class="answernumber">E. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Platforms and Device Compatibility<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-20" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">17</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_169"><input type="hidden" name="q19677:20_:flagged" value="0"><input type="hidden" value="qaid=194644&amp;qubaid=19677&amp;qid=47513&amp;slot=20&amp;checksum=dd520e7a3a497ff5c83fccedc80c521a&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:20_:flaggedcheckbox" name="q19677:20_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:20_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is nested loop in Java?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:20_answer" disabled="disabled" value="0" id="q19677:20_answer0"><label for="q19677:20_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A loop which is declared inside another conditional statement<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:20_answer" disabled="disabled" value="1" id="q19677:20_answer1" checked="checked"><label for="q19677:20_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A loop which is declared inside another loop<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q19677:20_answer" disabled="disabled" value="2" id="q19677:20_answer2"><label for="q19677:20_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A loop which is declared inside another class<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:20_answer" disabled="disabled" value="3" id="q19677:20_answer3"><label for="q19677:20_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">A loop which is declared inside another method<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-24" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">18</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_178"><input type="hidden" name="q19677:24_:flagged" value="0"><input type="hidden" value="qaid=194648&amp;qubaid=19677&amp;qid=47517&amp;slot=24&amp;checksum=c631ceec54bc8f65716b37f343895953&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:24_:flaggedcheckbox" name="q19677:24_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:24_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is multithreading?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:24_answer" disabled="disabled" value="0" id="q19677:24_answer0"><label for="q19677:24_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a small Java program that runs inside the browser and generates dynamic content<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:24_answer" disabled="disabled" value="1" id="q19677:24_answer1"><label for="q19677:24_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a combination of literals, variable names, method calls, and 
+operators. At runtime, it evaluates to a value whose type is referred to
+ as the expression’s type.<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:24_answer" disabled="disabled" value="2" id="q19677:24_answer2" checked="checked"><label for="q19677:24_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a process of executing multiple threads simultaneously<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:24_answer" disabled="disabled" value="3" id="q19677:24_answer3"><label for="q19677:24_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language feature that assigns a value to a variable, controls a 
+program’s flow by making a decision and/or repeatedly executing another 
+statement, or performs another task<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-16" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">19</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_187"><input type="hidden" name="q19677:16_:flagged" value="0"><input type="hidden" value="qaid=194640&amp;qubaid=19677&amp;qid=47509&amp;slot=16&amp;checksum=91ef86f24d4bb9bfdd5acf16708d4a13&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:16_:flaggedcheckbox" name="q19677:16_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:16_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>Java is a case-insensitive language.</strong><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q19677:16_answer" value="1" id="q19677:16_answertrue" disabled="disabled"><label for="q19677:16_answertrue" class="ml-1">True</label> </div><div class="r1 correct"><input type="radio" name="q19677:16_answer" value="0" id="q19677:16_answerfalse" disabled="disabled" checked="checked"><label for="q19677:16_answerfalse" class="ml-1">False</label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div></div></div></div></div></div><div id="question-19677-13" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">20</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_196"><input type="hidden" name="q19677:13_:flagged" value="0"><input type="hidden" value="qaid=194637&amp;qubaid=19677&amp;qid=47506&amp;slot=13&amp;checksum=6df1a3026a31a1aa4bf45dd49d2d3a97&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:13_:flaggedcheckbox" name="q19677:13_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:13_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is IDE?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:13_answer" disabled="disabled" value="0" id="q19677:13_answer0"><label for="q19677:13_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a block that is always executed<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:13_answer" disabled="disabled" value="1" id="q19677:13_answer1"><label for="q19677:13_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a software development kit that provides tools (including a 
+compiler) for developing Java programs. It also provides a private JRE 
+for running these programs.<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:13_answer" disabled="disabled" value="2" id="q19677:13_answer2" checked="checked"><label for="q19677:13_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a development framework consisting of a project manager for managing
+ a project’s files, a text editor for entering and editing source code, a
+ debugger for locating bugs, and other features.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:13_answer" disabled="disabled" value="3" id="q19677:13_answer3"><label for="q19677:13_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a mechanism to handle runtime errors. It is mainly used to handle checked exceptions.<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-1" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">21</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_205"><input type="hidden" name="q19677:1_:flagged" value="0"><input type="hidden" value="qaid=194625&amp;qubaid=19677&amp;qid=47494&amp;slot=1&amp;checksum=3b2357b68d4178cd6da039f438e6f261&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:1_:flaggedcheckbox" name="q19677:1_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:1_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the difference between margin and padding in the Android layout?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:1_answer" disabled="disabled" value="0" id="q19677:1_answer0"><label for="q19677:1_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Padding is used to offset the content of a view by specific px or dp<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:1_answer" disabled="disabled" value="1" id="q19677:1_answer1"><label for="q19677:1_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1">All answers are wrong</div></label> </div>
+<div class="r0"><input type="radio" name="q19677:1_answer" disabled="disabled" value="2" id="q19677:1_answer2"><label for="q19677:1_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Margin is specifying the extra space left on all four sides in the layout<br></p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:1_answer" disabled="disabled" value="3" id="q19677:1_answer3" checked="checked"><label for="q19677:1_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">Two answers on margin and padding are correct<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+</div></div></div></div></div><div id="question-19677-8" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">22</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_214"><input type="hidden" name="q19677:8_:flagged" value="0"><input type="hidden" value="qaid=194632&amp;qubaid=19677&amp;qid=47501&amp;slot=8&amp;checksum=736a93739e89a00684e10a85439cec0c&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:8_:flaggedcheckbox" name="q19677:8_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:8_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the JIT compiler?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:8_answer" disabled="disabled" value="0" id="q19677:8_answer0"><label for="q19677:8_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It implements the Java SE platform and makes it possible to run Java programs<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:8_answer" disabled="disabled" value="1" id="q19677:8_answer1"><label for="q19677:8_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a software-based processor that presents its own instruction set<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:8_answer" disabled="disabled" value="2" id="q19677:8_answer2" checked="checked"><label for="q19677:8_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is used to improve performance. It compiles parts of the byte code that
+ have similar functionality at the same time, and hence reduces the 
+amount of time needed for compilation. Here the term “compiler” refers 
+to a translator from the instruction set of a Java virtual machine (JVM)
+ to the instruction set of a specific CPU.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:8_answer" disabled="disabled" value="3" id="q19677:8_answer3"><label for="q19677:8_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language and a platform. The language is partly patterned after 
+the C and C++ languages to shorten the learning curve for C/C++ 
+developers. The platform consists of a virtual machine and an associated
+ execution environment.<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-25" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">23</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_223"><input type="hidden" name="q19677:25_:flagged" value="0"><input type="hidden" value="qaid=194649&amp;qubaid=19677&amp;qid=47518&amp;slot=25&amp;checksum=cb430a622c071aaab624189e3582ba5a&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:25_:flaggedcheckbox" name="q19677:25_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:25_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the Android Runtime (ART)?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:25_answer" disabled="disabled" value="0" id="q19677:25_answer0"><label for="q19677:25_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is the provision of a single interface to entities of different types<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:25_answer" disabled="disabled" value="1" id="q19677:25_answer1"><label for="q19677:25_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is the ability to create multiple methods of the same name with different implementations<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:25_answer" disabled="disabled" value="2" id="q19677:25_answer2" checked="checked"><label for="q19677:25_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is an application runtime environment used by the Android operating 
+system. Replacing Dalvik, which is the process virtual machine 
+originally used by Android, it performs the translation of the 
+application's bytecode into native instructions that are later executed 
+by the device's runtime environment.<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:25_answer" disabled="disabled" value="3" id="q19677:25_answer3"><label for="q19677:25_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a programming paradigm based on the concept of “objects”, which may 
+contain data, in the form of fields, often known as attributes; and 
+code, in the form of procedures, often known as methods<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-18" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">24</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_232"><input type="hidden" name="q19677:18_:flagged" value="0"><input type="hidden" value="qaid=194642&amp;qubaid=19677&amp;qid=47511&amp;slot=18&amp;checksum=d973754ccbc8de40be01e2b88363acbf&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:18_:flaggedcheckbox" name="q19677:18_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:18_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is Java variable?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:18_answer" disabled="disabled" value="0" id="q19677:18_answer0"><label for="q19677:18_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It
+ is a language feature that identifies a set of values (and their 
+representation in memory) and a set of operations that transform these 
+values into other values of that set<br></p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:18_answer" disabled="disabled" value="1" id="q19677:18_answer1"><label for="q19677:18_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a sequence of instructions symbolically represented in source code<br></p></div></label> </div>
+<div class="r0 correct"><input type="radio" name="q19677:18_answer" disabled="disabled" value="2" id="q19677:18_answer2" checked="checked"><label for="q19677:18_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is a named memory location that stores some type of value<br></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q19677:18_answer" disabled="disabled" value="3" id="q19677:18_answer3"><label for="q19677:18_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">It is the external file to store variables of the same type<br></p></div></label> </div>
+</div></div></div></div></div><div id="question-19677-14" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">25</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1664126464023_241"><input type="hidden" name="q19677:14_:flagged" value="0"><input type="hidden" value="qaid=194638&amp;qubaid=19677&amp;qid=47507&amp;slot=14&amp;checksum=4342cde69f9043417104ebab42c56aa1&amp;sesskey=FAvAjzMpJH&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q19677:14_:flaggedcheckbox" name="q19677:14_:flagged" value="0"><input type="image" class="questionflagimage" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q19677:14_:sequencecheck" value="3"><div class="qtext"><p dir="ltr" style="text-align: left;"><strong>What is the API level associated with Android 8 (Oreo)?</strong><br></p></div><div class="ablock"><div class="answer"><div class="r0"><input type="radio" name="q19677:14_answer" disabled="disabled" value="0" id="q19677:14_answer0"><label for="q19677:14_answer0" class="d-flex w-100"><span class="answernumber">A. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">18</p></div></label> </div>
+<div class="r1"><input type="radio" name="q19677:14_answer" disabled="disabled" value="1" id="q19677:14_answer1"><label for="q19677:14_answer1" class="d-flex w-100"><span class="answernumber">B. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">29</p></div></label> </div>
+<div class="r0"><input type="radio" name="q19677:14_answer" disabled="disabled" value="2" id="q19677:14_answer2"><label for="q19677:14_answer2" class="d-flex w-100"><span class="answernumber">C. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">20</p></div></label> </div>
+<div class="r1 correct"><input type="radio" name="q19677:14_answer" disabled="disabled" value="3" id="q19677:14_answer3" checked="checked"><label for="q19677:14_answer3" class="d-flex w-100"><span class="answernumber">D. </span><div class="flex-fill ml-1"><p dir="ltr" style="text-align: left;">26</p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+</div></div></div></div></div><input type="hidden" name="sesskey" value="FAvAjzMpJH"><div class="submitbtns"></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://ucasaslms.org/mod/quiz/view.php?id=27257">Finish review</a></div></div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="card activity-navigation">
+    <div class="card-body">
+        <div class="row">
+    <div class="col-md-4">                <div id="prev-activity" class="float-left">
+                        <span class="nav-guide">
+                            Previous activity
+                        </span>
+                            <a href="https://ucasaslms.org/mod/resource/view.php?id=27255&amp;forceview=1" id="prev-activity-link" class="btn btn-link" title="How to Connect Memu Emulator with Android Studio">◄ How to Connect Memu Emulator with Android Studio</a>
+                </div>
+</div>
+    <div class="col-md-4">                <div class="mdl-align">
+                    <div class="urlselect">
+    <form method="post" action="https://ucasaslms.org/course/jumpto.php" class="form-inline" id="url_select_f63308dfe8d6bb18">
+        <input type="hidden" name="sesskey" value="FAvAjzMpJH">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="selected">Jump to...</option>
+                    <option value="/mod/forum/view.php?id=27238&amp;forceview=1">Announcements</option>
+                    <option value="/mod/resource/view.php?id=27239&amp;forceview=1">Syllabus</option>
+                    <option value="/mod/folder/view.php?id=27240&amp;forceview=1">Course Project</option>
+                    <option value="/mod/attendance/view.php?id=27241&amp;forceview=1">Attendance</option>
+                    <option value="/mod/resource/view.php?id=27244&amp;forceview=1">Introduction to Mobile App Development</option>
+                    <option value="/mod/quiz/view.php?id=27245&amp;forceview=1">Intro quiz</option>
+                    <option value="/mod/assign/view.php?id=27246&amp;forceview=1">Tutorial Assignment 1</option>
+                    <option value="/mod/resource/view.php?id=28225&amp;forceview=1">An example of the Java Android Project in Android Studio 4.0</option>
+                    <option value="/mod/resource/view.php?id=27249&amp;forceview=1">Introduction to Java for Android Platform</option>
+                    <option value="/mod/assign/view.php?id=27250&amp;forceview=1">Tutorial Assignment 2</option>
+                    <option value="/mod/quiz/view.php?id=27251&amp;forceview=1">Intro to Java for Android Platform: Quiz</option>
+                    <option value="/mod/resource/view.php?id=27254&amp;forceview=1">Build a Simple User Interface</option>
+                    <option value="/mod/assign/view.php?id=27256&amp;forceview=1">Tutorial Assignment 3</option>
+                    <option value="/mod/resource/view.php?id=27255&amp;forceview=1">How to Connect Memu Emulator with Android Studio</option>
+                    <option value="/mod/resource/view.php?id=28970&amp;forceview=1">An Example of the App with Constraint Layout</option>
+                    <option value="/mod/resource/view.php?id=27260&amp;forceview=1">Java Programming Language Fundamentals</option>
+                    <option value="/mod/assign/view.php?id=27261&amp;forceview=1">Tutorial Assignment 4</option>
+                    <option value="/mod/quiz/view.php?id=27262&amp;forceview=1">Java Programming Language Fundamentals: Quiz</option>
+                    <option value="/mod/resource/view.php?id=29152&amp;forceview=1">Eclipse Mosquitto 1.4.4: Files (optional)</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Go">
+            </noscript>
+    </form>
+</div>
+
+                </div>
+</div>
+    <div class="col-md-4">                <div id="next-activity" class="float-right">
+                        <span class="nav-guide">
+                            Next activity
+                        </span>
+                            <a href="https://ucasaslms.org/mod/resource/view.php?id=28970&amp;forceview=1" id="next-activity-link" class="btn btn-link" title="An Example of the App with Constraint Layout">An Example of the App with Constraint Layout ►</a>
+                </div>
+</div>
+</div>
+    </div>
+</div>
+                </section>
+            </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id="mod_quiz_navblock_title"&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock" class=" block block_fake  card mb-3" role="navigation" data-block="_fake" aria-labelledby="instance-fakeid-63308dfe8fc8a-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-fakeid-63308dfe8fc8a-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton2" title="Correct" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton22" title="Correct" data-quiz-page="1" href="#question-19677-22"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton21" title="Correct" data-quiz-page="2" href="#question-19677-21"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton7" title="Correct" data-quiz-page="3" href="#question-19677-7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton11" title="Correct" data-quiz-page="4" href="#question-19677-11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton17" title="Correct" data-quiz-page="5" href="#question-19677-17"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton19" title="Correct" data-quiz-page="6" href="#question-19677-19"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton15" title="Correct" data-quiz-page="7" href="#question-19677-15"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton5" title="Correct" data-quiz-page="8" href="#question-19677-5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton9" title="Correct" data-quiz-page="9" href="#question-19677-9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton4" title="Correct" data-quiz-page="10" href="#question-19677-4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>11<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton10" title="Correct" data-quiz-page="11" href="#question-19677-10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>12<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton6" title="Correct" data-quiz-page="12" href="#question-19677-6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>13<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton23" title="Correct" data-quiz-page="13" href="#question-19677-23"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>14<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton12" title="Correct" data-quiz-page="14" href="#question-19677-12"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>15<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton3" title="Correct" data-quiz-page="15" href="#question-19677-3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>16<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton20" title="Correct" data-quiz-page="16" href="#question-19677-20"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>17<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton24" title="Correct" data-quiz-page="17" href="#question-19677-24"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>18<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton16" title="Correct" data-quiz-page="18" href="#question-19677-16"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>19<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton13" title="Correct" data-quiz-page="19" href="#question-19677-13"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>20<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton1" title="Correct" data-quiz-page="20" href="#question-19677-1"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>21<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton8" title="Correct" data-quiz-page="21" href="#question-19677-8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>22<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton25" title="Correct" data-quiz-page="22" href="#question-19677-25"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>23<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton18" title="Correct" data-quiz-page="23" href="#question-19677-18"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>24<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton14" title="Correct" data-quiz-page="24" href="#question-19677-14"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>25<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a href="https://ucasaslms.org/mod/quiz/review.php?attempt=14228&amp;cmid=27257&amp;showall=0">Show one page at a time</a><a class="mod_quiz-next-nav" href="https://ucasaslms.org/mod/quiz/view.php?id=27257">Finish review</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </div>
+        </div>
+    </div>
+
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <ul class="list-group metismenu">
+                    <li class="list-group-item" data-key="course-sections">
+                        <a class="m-l-0 has-arrow" href="javascript:void(0);">
+                            <span class="text">Course sections</span>
+                        </a>
+                        <ul>
+                                    <li class="list-group-item list-group-item-action " data-key="9399">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-0">
+                                            <span class="text">Mobile App Development</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9400">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-1">
+                                            <span class="text">Week 1</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9401">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-2">
+                                            <span class="text">Week 2</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9402">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-3">
+                                            <span class="text">Week 3</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9403">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-4">
+                                            <span class="text">Week 4</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9404">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-5">
+                                            <span class="text">Week 5</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9405">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-6">
+                                            <span class="text">Week 6</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9406">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-7">
+                                            <span class="text">Week 7</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9407">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-8">
+                                            <span class="text">Week 8</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9408">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-9">
+                                            <span class="text">Week 9</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9409">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-10">
+                                            <span class="text">Week 10</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9410">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-11">
+                                            <span class="text">Week 11</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9411">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-12">
+                                            <span class="text">Week 12</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9412">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-13">
+                                            <span class="text">Week 13</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9413">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-14">
+                                            <span class="text">Week 14</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="9414">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=779#section-15">
+                                            <span class="text">Week 15</span>
+                                        </a>
+                                    </li>
+                        </ul>
+                    </li>
+                        <li class="list-group-item list-group-item-action " data-key="participants">
+                            <a href="https://ucasaslms.org/user/index.php?id=779">
+                                <span class="text m-l-0">Participants</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="badgesview">
+                            <a href="https://ucasaslms.org/badges/view.php?type=2&amp;id=779">
+                                <span class="text m-l-0">Badges</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="certificates">
+                            <a href="https://ucasaslms.org/theme/moove/certificates.php?id=779">
+                                <span class="text m-l-0">Certificates</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="competencies">
+                            <a href="https://ucasaslms.org/admin/tool/lp/coursecompetencies.php?courseid=779">
+                                <span class="text m-l-0">Competencies</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="grades">
+                            <a href="https://ucasaslms.org/grade/report/index.php?id=779">
+                                <span class="text m-l-0">Grades</span>
+                            </a>
+                        </li>
+                </ul>
+                <ul class="list-group metismenu">
+                        <li class="list-group-item list-group-item-action " data-key="myhome">
+                            <a href="https://ucasaslms.org/my/">
+                                <span class="text m-l-0">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="home">
+                            <a href="https://ucasaslms.org/?redirect=0">
+                                <span class="text m-l-0">Site home</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="calendar">
+                            <a href="https://ucasaslms.org/calendar/view.php?view=month&amp;course=779">
+                                <span class="text m-l-0">Calendar</span>
+                            </a>
+                        </li>
+                    <li class="list-group-item" data-key="mycourses">
+                        <a class="m-l-0 has-arrow" href="javascript:void(0);">
+                            <span class="text">My courses</span>
+                        </a>
+                        <ul>
+                                    <li class="list-group-item list-group-item-action " data-key="2">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/index.php?categoryid=2">
+                                            <span class="text">The School of Arts and Sciences</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="585">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=585">
+                                            <span class="text">SE3052NCJYT2</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action " data-key="582">
+                                        <a class="list-group-item list-group-item-action " href="https://ucasaslms.org/course/view.php?id=582">
+                                            <span class="text">D&amp;AoANCJYT2</span>
+                                        </a>
+                                    </li>
+                        </ul>
+                    </li>
+                        <li class="list-group-item list-group-item-action " data-key="privatefiles">
+                            <a href="https://ucasaslms.org/user/files.php">
+                                <span class="text m-l-0">Private files</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="708">
+                            <a href="https://ucasaslms.org/course/view.php?id=708">
+                                <span class="text m-l-1">COMP4026 - 2023</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="779">
+                            <a href="https://ucasaslms.org/course/view.php?id=779">
+                                <span class="text m-l-1">EMAD3053NC - 2023_1</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="806">
+                            <a href="https://ucasaslms.org/course/view.php?id=806">
+                                <span class="text m-l-1">COMP 4106 2022</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="800">
+                            <a href="https://ucasaslms.org/course/view.php?id=800">
+                                <span class="text m-l-1">Computer Graphics</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="780">
+                            <a href="https://ucasaslms.org/course/view.php?id=780">
+                                <span class="text m-l-1">FYP1 4811NC - 2023_1</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="110">
+                            <a href="https://ucasaslms.org/course/view.php?id=110">
+                                <span class="text m-l-1">ITPSASUCA</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="126">
+                            <a href="https://ucasaslms.org/course/view.php?id=126">
+                                <span class="text m-l-1">CEPSASCOOPE</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item list-group-item-action " data-key="281">
+                            <a href="https://ucasaslms.org/course/view.php?id=281">
+                                <span class="text m-l-1">DFWCSADD&amp;DL</span>
+                            </a>
+                        </li>
+        </ul>    </div>
+    
+    <div id="nav-drawer-footer">
+        <span id="themesettings-control">
+            <i title="Accessibility settings" class="fa fa-universal-access">
+            </i>
+            <span class="text">Accessibility settings</span>
+        </span>
+    </div>
+
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+<div id="top-footer">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-7 contact">
+            <h3>Stay in touch</h3>
+            <h4>University of Central Asia (UCA)</h4>
+            <ul>
+                    <li>
+                        <i class="slicon-globe"></i>
+                        <a href="https://ucentralasia.org/" target="_blank">https://ucentralasia.org/</a>
+                    </li>
+                    <li>
+                        <i class="slicon-phone"></i>
+                        <a href="tel:Tel.: 996 (0) 312 910 822" target="_blank">Tel.: 996 (0) 312 910 822</a>
+                    </li>
+                    <li>
+                        <i class="slicon-envelope"></i>
+                        <a href="mailto:info@ucentralasia.org" target="_blank">info@ucentralasia.org</a>
+                    </li>
+            </ul>
+        </div>
+        <div class="col-md-5 social">
+          <ul>
+                <li>
+                  <a href="https://www.facebook.com/ucentralasia/" target="_blank" class="facebook btn">
+                    <i class="slicon-social-facebook"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://twitter.com/ucentralasia" target="_blank" class="twitter btn">
+                    <i class="slicon-social-twitter"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.linkedin.com/school/university-of-central-asia/" target="_blank" class="linkedin btn">
+                    <i class="slicon-social-linkedin"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.youtube.com/user/ucentralasia" target="_blank" class="youtube btn">
+                    <i class="slicon-social-youtube"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/ucentralasia/" target="_blank" class="instagram btn">
+                    <i class="slicon-social-instagram"></i>
+                  </a>
+                </li>
+
+                  <li>
+                      <a href="https://api.whatsapp.com/send?phone=+996%20770%20822%20193" target="_blank" class="whatsapp btn">
+                          <i class="fa fa-whatsapp"></i>
+                      </a>
+                  </li>
+          </ul>
+
+          <div class="plugins_standard_footer_html"><div class="tool_dataprivacy mb-2"><a class="btn btn-default" href="https://ucasaslms.org/admin/tool/dataprivacy/summary.php"><i class="slicon-folder-alt"></i> Data retention summary</a></div><div class="mobilefooter mb-2"><a class="btn btn-primary" href="https://download.moodle.org/mobile?version=2020061501&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile"><i class="slicon-screen-smartphone"></i> Get the mobile app</a></div></div>
+        </div>
+    </div>
+  </div>
+</div>
+<footer id="page-footer" class="p-y-1">
+  <div class="container-fluid">
+      <div id="course-footer"></div>
+
+      <div class="madewithmoodle">
+          <p>Proudly made with</p>
+          <a href="https://moodle.org/"><img src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/moodle-logo-white.png" alt="Moodle logo"></a>
+      </div>
+
+      <div class="madeby">
+          <p>Made with <i class="text-danger fa fa-heart"></i> by <a href="http://conecti.me/">conecti.me</a></p>
+      </div>
+  </div>
+</footer>
+
+
+<p>Badges from <a href="https://moodlebadges.com/">MoodleBadges.com</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/"><img style="vertical-align:middle;" src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/cc.png" alt="Creative Commons"></a></p><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://ucasaslms.org/lib/requirejs.php/1662461089/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://ucasaslms.org/lib/javascript.php/1662461089/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://ucasaslms.org/lib/javascript.php/1662461089/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://ucasaslms.org/lib/javascript.php/1662461089/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="Build%20a%20Simple%20User%20Interface%20Quiz%20Attempt%20review_files/javascript_008.php"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://ucasaslms.org/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture"
+});
+
+    });
+});;
+M.util.js_pending('local_edwiserreports/install'); require(['local_edwiserreports/install'], function(amd) {amd.init(); M.util.js_complete('local_edwiserreports/install');});;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select63308dfe8d6bb5', [CustomEvents.events.accessibleChange]);
+    $('#single_select63308dfe8d6bb5').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f63308dfe8d6bb4').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(
+[
+    'jquery',
+    'core_message/message_popover'
+],
+function(
+    $,
+    Popover
+) {
+    var toggle = $('#message-drawer-toggle-63308dfea030a63308dfe8d6bb8');
+    Popover.init(toggle);
+});
+;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f63308dfe8d6bb18').submit();
+            });
+        });
+    ;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(37358, [], true); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/ucasaslms.org\/lib\/javascript.php\/1662461089\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/ucasaslms.org\/lib\/javascript.php\/1662461089\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random63308dfe8d6bb1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/ucasaslms.org\/question\/toggleflag.php", [{"src":"https:\/\/ucasaslms.org\/theme\/image.php\/moove\/core\/1662461089\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/ucasaslms.org\/theme\/image.php\/moove\/core\/1662461089\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random63308dfe8d6bb1'); });
+ M.util.js_pending('random63308dfe8d6bb2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random63308dfe8d6bb2'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random63308dfe8d6bb19'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random63308dfe8d6bb19'); });
+ M.util.js_pending('random63308dfe8d6bb20'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63308dfe8d6bb20'); });
+})();
+//]]>
+</script>
+
+
+
+</body></html>
